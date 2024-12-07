@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Dameri Angie</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PARA MI MEJOR AMIGA: Dameri Angie</h1>
+            <p>Siempre estaré contigo en las buenas y en las malas ❤️</p>
+        </header>
+        <section class="gallery">
+            <img src="Amis1.jpg" alt="Amistad 1" class="fade">
+            <img src="amis3.jpg" alt="Amistad 2" class="fade">
+            <img src="amis2.jpg" alt="Amistad 3" class="fade">
+        </section>
+        <section class="phrases">
+            <p>Eres una persona única, valiente y maravillosa.</p>
+            <p>Gracias por estar siempre a mi lado, tu amistad es un tesoro.</p>
+            <p>Te prometo que siempre estaré contigo. 💖</p>
+            <p>Cada día contigo es un regalo lleno de momentos inolvidables. 💫</p>
+            <p>Tu corazón es tan grande como el universo, nunca dejes de brillar. 🌟</p>
+            <p>No importa lo que pase, siempre estaré aquí para ti. 🤝</p>
+            <p>Eres el ejemplo perfecto de fortaleza y bondad. 💪❤️</p>
+            <p>Gracias por llenar mi vida de luz y alegría. 🌈</p>
+            <p>Tu sonrisa tiene el poder de iluminar incluso los días más oscuros. 😊</p>
+            <p>Te valoro más de lo que las palabras pueden expresar. 🥰</p>
+            <p>Contigo, todo parece más fácil y hermoso. 💐</p>
+            <p>El mundo necesita mas personas como tú: auténticas y llenas de amor. 🌍❤️</p>
+            <p>No hay límites para lo que puedes lograr. ¡Cree en ti siempre! 🚀</p>
+        </section>
+
+        <p>Haz clic en el botón para reproducir música.</p>
+
+   
+    <audio id="miAudio" loop>
+        <source src="deko1.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <button id="playButton">Reproducir Música</button>
+
+    <script>
+        const audio = document.getElementById('miAudio');
+        const playButton = document.getElementById('playButton');
+
+        playButton.addEventListener('click', function() {
+            audio.play().catch(error => {
+                console.log('Error al intentar reproducir el audio:', error);
+            });
+        });
+    </script>
+       
+
+        
+
+    </div>
+<audio autoplay>
+            <source src="deko1.mp3" type="audio/mpeg">
+        </audio>
+</body>
+</html>
